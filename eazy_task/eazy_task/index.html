@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi E-Learning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>EAZY TASK</h1>
+      <img src="img/logo.jpg" alt="" />
+
+      <div class="search">
+        <input type="text" id="search" placeholder="Cari tugas..." />
+      </div>
+
+      <div class="task-form">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Masukkan tugas baru..."
+        />
+        <label> <input type="checkbox" id="priorityCheckbox" /> Penting </label>
+        <button id="addTaskBtn">Tambah Tugas</button>
+      </div>
+
+      <ul id="taskList"></ul>
+      <button id="logoutBtn">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
