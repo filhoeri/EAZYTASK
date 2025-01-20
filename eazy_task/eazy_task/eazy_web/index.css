@@ -1,0 +1,214 @@
+/* Reset dan Styling Dasar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #0094b6;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo-img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Dashboard Styling */
+.dashboard-container {
+    width: 80%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.dashboard-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+form input,
+form select,
+form button {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form button:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+form button:active {
+    background-color: #388e3c;
+}
+
+/* Heading for Tasks */
+h3 {
+    color: #444;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 15px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #f0f0f0;
+}
+
+ul li strong {
+    font-size: 18px;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+ul li hr {
+    margin-top: 10px;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+ul li .priority {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+ul li .status {
+    font-weight: bold;
+    color: #f44336;
+}
+
+/* Link Styling */
+a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #e53935;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    form input,
+    form select,
+    form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    ul li {
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    form input,
+    form select,
+    form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+
+    a {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
